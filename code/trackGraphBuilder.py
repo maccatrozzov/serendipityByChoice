@@ -15,7 +15,6 @@ from rdflib.namespace import RDF, FOAF, RDFS, XSD
 SP = Namespace('https://open.spotify.com/')
 DB = Namespace('http://dbpedia.org/ontology/')
 
-client_credentials_manager = SpotifyClientCredentials(client_id = '467206b9784846d4a9fbda0c9f516ba3',client_secret='273608cedfef4e9fb583854fc20919c4')
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 	
