@@ -6,7 +6,6 @@ from os.path import isfile, join
 onlyfiles = [f for f in listdir('data/categories/') if isfile(join('data/categories/', f))]
 categories_done = [f.replace(".csv", "") for f in onlyfiles]
 
-client_credentials_manager = SpotifyClientCredentials(client_id = '467206b9784846d4a9fbda0c9f516ba3',client_secret='273608cedfef4e9fb583854fc20919c4')
 sp = spotipy.Spotify(client_credentials_manager=client_credentials_manager)
 
 cat = {}
